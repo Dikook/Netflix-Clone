@@ -16,7 +16,7 @@
 		8F05AD4C2C5D3432006F8B97 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F05AD4B2C5D3432006F8B97 /* UpcomingViewController.swift */; };
 		8F05AD4E2C5D343A006F8B97 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F05AD4D2C5D343A006F8B97 /* SearchViewController.swift */; };
 		8F05AD502C5D3442006F8B97 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F05AD4F2C5D3442006F8B97 /* DownloadViewController.swift */; };
-		8F0760F52C5F38A20088C3EF /* CellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0760F42C5F38A20088C3EF /* CellViewController.swift */; };
+		8F0760F52C5F38A20088C3EF /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0760F42C5F38A20088C3EF /* CollectionViewTableViewCell.swift */; };
 		8F0760F82C5F39CA0088C3EF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8F0760F72C5F39CA0088C3EF /* SnapKit */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 		8F05AD4B2C5D3432006F8B97 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		8F05AD4D2C5D343A006F8B97 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		8F05AD4F2C5D3442006F8B97 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
-		8F0760F42C5F38A20088C3EF /* CellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewController.swift; sourceTree = "<group>"; };
+		8F0760F42C5F38A20088C3EF /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +66,11 @@
 		8F05AD332C5D31C6006F8B97 /* Netflix Clone */ = {
 			isa = PBXGroup;
 			children = (
+				8F0760FC2C5FE3AA0088C3EF /* Managers */,
+				8F0760FD2C5FE3AF0088C3EF /* Resourcers */,
+				8F0760F92C5FE3880088C3EF /* Models */,
+				8F0760FB2C5FE3A00088C3EF /* Views */,
+				8F0760FA2C5FE3930088C3EF /* ViewModels */,
 				8F05AD482C5D340B006F8B97 /* Controllers */,
 				8F05AD342C5D31C6006F8B97 /* AppDelegate.swift */,
 				8F05AD362C5D31C6006F8B97 /* SceneDelegate.swift */,
@@ -81,12 +86,47 @@
 			isa = PBXGroup;
 			children = (
 				8F05AD492C5D342B006F8B97 /* HomeViewController.swift */,
-				8F0760F42C5F38A20088C3EF /* CellViewController.swift */,
 				8F05AD4B2C5D3432006F8B97 /* UpcomingViewController.swift */,
 				8F05AD4D2C5D343A006F8B97 /* SearchViewController.swift */,
 				8F05AD4F2C5D3442006F8B97 /* DownloadViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8F0760F92C5FE3880088C3EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F0760FA2C5FE3930088C3EF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8F0760FB2C5FE3A00088C3EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F0760F42C5F38A20088C3EF /* CollectionViewTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8F0760FC2C5FE3AA0088C3EF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		8F0760FD2C5FE3AF0088C3EF /* Resourcers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourcers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,7 +207,7 @@
 			files = (
 				8F05AD4E2C5D343A006F8B97 /* SearchViewController.swift in Sources */,
 				8F05AD392C5D31C6006F8B97 /* MainTabBarViewController.swift in Sources */,
-				8F0760F52C5F38A20088C3EF /* CellViewController.swift in Sources */,
+				8F0760F52C5F38A20088C3EF /* CollectionViewTableViewCell.swift in Sources */,
 				8F05AD352C5D31C6006F8B97 /* AppDelegate.swift in Sources */,
 				8F05AD502C5D3442006F8B97 /* DownloadViewController.swift in Sources */,
 				8F05AD372C5D31C6006F8B97 /* SceneDelegate.swift in Sources */,

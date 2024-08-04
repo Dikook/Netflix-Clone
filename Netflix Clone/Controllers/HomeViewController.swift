@@ -10,18 +10,19 @@ import UIKit
 class HomeViewController: UIViewController {
 
     private let homeFeedTable: UITableView = {
-        let tableView = UITableView(frame: .zero, style: .plain)
-        tableView.register(CellViewController.self, forCellReuseIdentifier: CellViewController.reuseID)
+        let tableView = UITableView(frame: .zero, style: .grouped)
+        tableView.register(CollectionViewTableViewCell.self, forCellReuseIdentifier: CollectionViewTableViewCell.reuseID)
         return tableView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         view.backgroundColor = .systemBackground
+        view.addSubview(homeFeedTable)
+        
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
-        view.addSubview(homeFeedTable)
+        
         funcLayout()
     }
     
@@ -41,9 +42,18 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CellViewController.reuseID, for: indexPath)
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.reuseID, for: indexPath) as? CollectionViewTableViewCell else {
+            return UITableViewCell()
+        }
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        200
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        40
+    }
 }
+
